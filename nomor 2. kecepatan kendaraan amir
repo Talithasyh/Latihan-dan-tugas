@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int v,s,t;
+    s=750;
+    t=20;
+    
+    cout<<"jarak jakarta ke surabaya: "<<s<<" km"<<'\n';
+    cout<<"waktu tempuh amir dengan menggunakan roda 4: "<<t<<" jam"<<'\n';
+    
+     v=s/t;
+    cout<<"maka kecepatan kendaraan amir dari jakarta ke surabaya adalah "<<v<< " km/jam"<<endl;
+}
