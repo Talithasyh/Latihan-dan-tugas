@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int nilaitugas, uts, uas, ratarata;
+    nilaitugas=80;
+    uts=82;
+    uas=85;
+    
+    cout<<"Data nilai mahasiswa Paramadina\n";
+    cout<<"nilai tugas: "<<nilaitugas<<'\n';
+    cout<<"uts: "<<uts<<'\n';
+    cout<<"uas: "<<uas<<'\n';
+    
+    ratarata =(nilaitugas+uts+uas)/3;
+    cout<<"hasil rata-rata akhir = "<<ratarata;
+}
