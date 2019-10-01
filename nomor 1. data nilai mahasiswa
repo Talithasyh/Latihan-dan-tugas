@@ -16,4 +16,5 @@ int main()
     
     ratarata =(nilaitugas+uts+uas)/3;
     cout<<"hasil rata-rata akhir = "<<ratarata;
+return 0;
 }
