@@ -13,4 +13,5 @@ int main()
     
      v=s/t;
     cout<<"maka kecepatan kendaraan amir dari jakarta ke surabaya adalah "<<v<< " km/jam"<<endl;
+return 0;
 }
