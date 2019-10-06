@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+int main() 
+{
+    char nama[10];
+    int u;
+    
+    cout<<"nama mahasiswa : ";
+    cin>>nama;
+    cout<<"umur: ";
+    cin>>u;
+if (u>=17)
+{
+    cout<<"Selamat "<<nama<<" diterima sebagai mahasiswa baru di universitas paramadina.";
+}
+else if (u<17)
+{
+    cout<<"maaf "<<nama<<" tidak diterima sebagai mahasiswa baru di universitas paramadina.Tetap semangat dan jangan putus asa. ";
+}
+return 0;
+}
