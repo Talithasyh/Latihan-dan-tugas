@@ -4,20 +4,27 @@ using namespace std;
 
 int main() 
 {
-    char nama[10];
+    char nama[25];
     int u;
     
-    cout<<"nama mahasiswa : ";
-    cin>>nama;
-    cout<<"umur: ";
-    cin>>u;
-if (u>=17)
-{
-    cout<<"Selamat "<<nama<<" diterima sebagai mahasiswa baru di universitas paramadina.";
-}
-else if (u<17)
-{
-    cout<<"maaf "<<nama<<" tidak diterima sebagai mahasiswa baru di universitas paramadina.Tetap semangat dan jangan putus asa. ";
-}
-return 0;
+    cout << "masukan nama anda : ";
+    cin >> nama;
+    cout << "masukan umur anda : ";
+    cin >> u;
+    
+    
+    cout << " nama calon mahasiswa : " << nama << '\n';
+    cout << " usia : " << u << " tahun" << '\n';
+
+    if (u>=17)
+    {
+        cout << " Selamat, anda dinyatakan lulus sebagai mahasiswa di Universitas Paramadina" << endl;
+    }
+    else
+    {
+        cout << " Maaf, anda dinyatakan tidak lulus sebagai mahasiswa di Universitas Paramadina " << '\n';
+        cout << " TETAP SEMANGAT DAN JANGAN PUTUS ASA " << endl;
+    }
+    
+    return 0;
 }
