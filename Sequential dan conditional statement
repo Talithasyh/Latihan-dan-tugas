@@ -12,7 +12,6 @@ int main()
     cout << "masukan umur anda : ";
     cin >> u;
     
-    
     cout << " nama calon mahasiswa : " << nama << '\n';
     cout << " usia : " << u << " tahun" << '\n';
 
