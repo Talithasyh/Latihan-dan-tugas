@@ -1,0 +1,45 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+   int tugas,uts,uas,rata_rata;
+   cout << "masukan nilai tugas : ";
+   cin >> tugas;
+   cout << "masukan nilai uts : ";
+   cin >> uts;
+   cout << "masukan nilai uas : ";
+   cin >> uas;
+     rata_rata = ((0,3*tugas) + (0,3*uts) + (0,4*uas))/10;
+   cout << "nilai rata rata : " << rata_rata << endl;
+   
+   if (rata_rata>=85)
+   {
+       cout << "indeks nilai = A" << endl;
+       return 0;
+   }
+   else if (rata_rata<85 and rata_rata>=75)
+   {
+       cout << "indeks nilai = B" << endl;
+       return 0;
+   }
+   else if (rata_rata<75 and rata_rata>=60)
+   {
+       cout << "indeks nilai = C" << endl;
+       return 0;
+   }
+   else if (rata_rata<60 and rata_rata>=45)
+   {
+       cout << "indeks nilai = D" << endl;
+       return 0;
+   }
+   else if (rata_rata<45)
+   {
+       cout << "indeks nilai = E" << endl;
+   }
+   else
+   {
+   cout << "tidak terdefinisi" << endl;
+   return 0;
+   }
+}
