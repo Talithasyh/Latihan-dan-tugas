@@ -1,0 +1,117 @@
+#include <iostream>
+
+using namespace std;
+
+int main() 
+{
+    int tanggal,bulan,tahun,max_tgl;
+    
+    cout << "masukan tanggal : ";
+    cin >> tanggal;
+    cout << "masukan bulan : ";
+    cin >> bulan;
+    cout << "masukan tahun : ";
+    cin >> tahun;
+    
+    tanggal = tanggal+1;
+    if (tahun%4!=0) {
+        //bukan tahun kabisat
+        if ((bulan==1)||(bulan==3)||(bulan==5)||(bulan==7)||(bulan==8)||(bulan==10)) {
+            if (tanggal>=32) {
+                bulan = bulan+1;
+                tanggal = tanggal-31;
+                if (bulan>=13) {
+                    tahun = tahun+1;
+                    bulan = bulan-12;
+                    cout << "hari berikutnya :  " << tanggal << " - " << bulan << " - " << tahun;
+                    return 0;
+                }
+                cout << "hari berikutnya : " << tanggal << " - " << bulan << " - " << tahun;
+                return 0;
+            }
+            cout << "hari berikutnya : " << tanggal << " - " << bulan << " - " << tahun;
+            return 0;
+        } else if ((bulan=4)||(bulan=6)||(bulan=9)||(bulan=11)) {
+            if (tanggal>=31) {
+                bulan = bulan+1;
+                tanggal = tanggal-30;
+                if (bulan>=13) {
+                    tahun = tahun+1;
+                    bulan = bulan-12;
+                    cout << "hari berikutnya : " << tanggal << " - " << bulan << " - " << tahun;
+                    return 0;
+                }
+                cout << "hari berikutnya : " << tanggal << " - " << bulan << " - " << tahun;
+                return 0;
+            }
+            cout << "hari berikutnya : " << tanggal << " - " << bulan << " - " << tahun;
+            return 0;
+        } else if (bulan==2) {
+            if (tanggal>=30) {
+                bulan = bulan+1;
+                tanggal = tanggal-29;
+                if (bulan>=13) {
+                    tahun = tahun+1;
+                    bulan = bulan-12;
+                    cout << "hari berikutnya : " << tanggal << " - " << bulan << " - " << tahun;
+                    return 0;
+                }
+                cout << "hari berikutnya : " << tanggal << " - " << bulan << " - " << tahun;
+                return 0;
+            }
+            cout << "hari berikutnya : " << tanggal << " - " << bulan << " - " << tahun;
+            return 0;
+        }
+    }else {
+        //kabisat 
+        cout << "(TAHUN KABISAT TERBACA)" <<endl;
+        if ((bulan==1)||(bulan==3)||(bulan==5)||(bulan==7)||(bulan==8)||(bulan==10)) {
+            if (tanggal>=32) {
+                bulan = bulan+1;
+                tanggal = tanggal-31;
+                if (bulan>=13) {
+                    tahun = tahun+1;
+                    bulan = bulan-12;
+                    cout << "hari berikutnya :  " << tanggal << " - " << bulan << " - " << tahun;
+                    return 0;
+                }
+                cout << "hari berikutnya : " << tanggal << " - " << bulan << " - " << tahun;
+                return 0;
+            }
+            cout << "hari berikutnya : " << tanggal << " - " << bulan << " - " << tahun;
+            return 0;
+        } else if ((bulan=4)||(bulan=6)||(bulan=9)||(bulan=11)) {
+            if (tanggal>=31) {
+                bulan = bulan+1;
+                tanggal = tanggal-30;
+                if (bulan>=13) {
+                    tahun = tahun+1;
+                    bulan = bulan-12;
+                    cout << "hari berikutnya : " << tanggal << " - " << bulan << " - " << tahun;
+                    return 0;
+                }
+                cout << "hari berikutnya : " << tanggal << " - " << bulan << " - " << tahun;
+                return 0;
+            }
+            cout << "hari berikutnya : " << tanggal << " - " << bulan << " - " << tahun;
+            return 0;
+        } else if (bulan==2) {
+            if (tanggal>=30) {
+                bulan = bulan+1;
+                tanggal = tanggal-29;
+                if (bulan>=13) {
+                    tahun = tahun+1;
+                    bulan = bulan-12;
+                    cout << "hari berikutnya : " << tanggal << " - " << bulan << " - " << tahun;
+                    return 0;
+                }
+                cout << "hari berikutnya : " << tanggal << " - " << bulan << " - " << tahun;
+                return 0;
+            }
+            cout << "hari berikutnya : " << tanggal << " - " << bulan << " - " << tahun;
+            return 0;
+          }
+        
+       }
+    
+    }
