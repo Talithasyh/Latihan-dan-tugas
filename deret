@@ -6,8 +6,10 @@ int main() {
     int i,n,jawaban;
     cout << "masukan nilai n : ";
     cin >> n;
+    jawaban = 0;
+    
     for (i=1; i<=n; i++) {
-        jawaban=i+n;
+        jawaban+=i;
     }
     cout << "hasil : " << jawaban << endl;
 }
